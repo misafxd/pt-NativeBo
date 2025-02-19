@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding-inline: 6rem;
+}
+
+.logo {
+  margin-right: auto;
+}
