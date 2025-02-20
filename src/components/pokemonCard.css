@@ -1,0 +1,145 @@
+.card {
+  border: 1px solid white;
+  position: relative;
+  border-radius: 1.5rem;
+  max-width: 15rem;
+  min-height: 20rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  color: black;
+  /* text-shadow: 1px 1px black; */
+}
+
+.favorite {
+  font-size: 1.2rem;
+  position: absolute;
+  border: none;
+  background: none;
+  color: red;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.pokemon-image {
+  width: 100%;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.pokemon-name{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.pokemon-type{
+  margin:0;
+}
+
+
+.stats {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  align-self: stretch;
+  align-items: center;
+  background: rgba( 255, 255, 255, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.stats div{
+  flex: 1;
+}
+
+// colores que añadire por naturaleza
+
+.fighting {
+    background: linear-gradient(to bottom right, #C22E28, #FF6F61);
+}
+
+.flying {
+    background: linear-gradient(to bottom right, #A98FF3, #C3B1E1);
+}
+
+.poison {
+    background: linear-gradient(to bottom right, #A33EA1, #D1A3D4);
+}
+
+.ground {
+    background: linear-gradient(to bottom right, #E2BF65, #F5D9A5);
+}
+
+.rock {
+    background: linear-gradient(to bottom right, #B6A136, #DCC48E);
+}
+
+.bug {
+    background: linear-gradient(to bottom right, #A6B91A, #C6D16B);
+}
+
+/* Ghost */
+.ghost {
+    background: linear-gradient(to bottom right, #735797, #A786C2);
+}
+
+.steel {
+    background: linear-gradient(to bottom right, #B7B7CE, #D1D1E0);
+}
+
+/* Fire */
+.fire {
+    background: linear-gradient(to bottom right, #EE8130, #FFA756);
+}
+
+.water {
+    background: linear-gradient(to bottom right, #6390F0, #8FC0FF);
+}
+
+.grass {
+    background: linear-gradient(to bottom right, #7AC74C, #A6E3A1);
+}
+
+.electric {
+    background: linear-gradient(to bottom right, #F7D02C, #FFE16B);
+}
+
+.psychic {
+    background: linear-gradient(to bottom right, #F95587, #FFA3B1);
+}
+
+.ice {
+    background: linear-gradient(to bottom right, #96D9D6, #BFFCC6);
+}
+
+.dragon {
+    background: linear-gradient(to bottom right, #6F35FC, #9A7ED9);
+}
+
+.dark {
+    background: linear-gradient(to bottom right, #705746, #A88A7F);
+}
+
+.fairy {
+    background: linear-gradient(to bottom right, #D685AD, #FFB6D9);
+}
+
+.stellar {
+    background: linear-gradient(to bottom right, #FFFFFF, #E0E0E0);
+}
+
+.normal {
+    background: linear-gradient(to bottom right, #68A090, #A3C4BC);
+}
