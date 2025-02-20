@@ -10,11 +10,24 @@ const Layout = () => {
 
   const PokemonsPerPage = 20;
 
+  useEffect(() => {
+    const savedFavorites = localStorage.getItem('favorites');
+    if (savedFavorites) {
+      setFavorites(JSON.parse(savedFavorites));
+    }
+  }, []);
+
   const handleAddFavorite = (pokemonId) => {
-    setFavorites((prevFavorites) => ({
-      ...prevFavorites,
-      [pokemonId]: !prevFavorites[pokemonId],
-    }));
+    setFavorites((prevFavorites) => {
+      const updatedFavorites = {
+        ...prevFavorites,
+        [pokemonId]: !prevFavorites[pokemonId],
+      };
+
+      localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+
+      return updatedFavorites;
+    });
   };
 
   const fetchPokemons = async (page) => {
