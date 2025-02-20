@@ -56,7 +56,6 @@ function App() {
 
   return (
     <>
-      <Navbar />
       <h1>Pokemons</h1>
       <section className='pokemon-page'>
         {pokemons.map((pokemon) => (
