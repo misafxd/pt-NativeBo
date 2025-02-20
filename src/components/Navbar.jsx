@@ -1,15 +1,16 @@
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className='nav'>
       <div className='logo'>
-        <a href='/'>
-          <img src='../../public/pokemon.svg' width={100} alt='Logo pokemon page' />
-        </a>
+        <Link to='/'>
+          <img src='/pokemon.svg' width={100} alt='Logo pokemon page' />
+        </Link>
       </div>
-      <a href='#'>Home</a>
-      <a href='#'>Favoritos</a>
+      <Link to='/'>Home</Link>
+      <Link to='favorites'>Favoritos</Link>
     </nav>
   )
 }
