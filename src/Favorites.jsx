@@ -2,9 +2,8 @@ import PokemonCard from "./components/PokemonCard";
 import { useOutletContext } from "react-router-dom";
 
 const Favorites = () => {
-  const { pokemons, favorites, onToggle } = useOutletContext();
+  const { favoritePokemons, favorites, onToggle } = useOutletContext();
 
-  const favoritePokemons = pokemons.filter((pokemon) => favorites[pokemon.id]);
 
   return (
     <>
