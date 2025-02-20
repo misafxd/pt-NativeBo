@@ -1,19 +1,17 @@
-import { useState } from "react";
 import './pokemonCard.css'
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
-const PokemonCard = ({ pokemon }) => {
-  const [favorite, setFavorite] = useState(false);
+const PokemonCard = ({ pokemon, onToggle, isFavorite }) => {
 
   function handleFavoriteToggle() {
-    setFavorite(!favorite);
+    onToggle(pokemon.id)
   }
 
   return (
     <div className={pokemon ? pokemon.type + " card" : "card"}>
       <div>
         <button className="favorite" type="button" onClick={handleFavoriteToggle}>
-          {favorite ? <FaHeart /> : <FaRegHeart />}
+          {isFavorite ? <FaHeart /> : <FaRegHeart />}
         </button>
         {pokemon && <img className="pokemon-image" src={pokemon.image} alt={pokemon.name} />}
       </div>
