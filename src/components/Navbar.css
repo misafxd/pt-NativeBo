@@ -1,8 +1,8 @@
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-inline: 17rem;
+  padding-inline: 2rem;
   padding-block: 1rem;
   gap: 2rem;
   min-width: 70%;
@@ -17,8 +17,20 @@
 .nav a{
   color: #fff;
   text-decoration: none;
+  font-size: 1rem;
 }
 
-.logo {
-  margin-right: auto;
+ .logo { 
+   margin-right: auto; 
+ } 
+
+.logo img{
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 460px){
+  .nav {
+    padding-inline: 1.5rem;
+  }
 }

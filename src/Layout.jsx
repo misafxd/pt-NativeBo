@@ -143,6 +143,10 @@ const Layout = () => {
       <main>
         <Outlet context={contextValue} />
       </main>
+      <footer>
+        <p>Hecho por Misael Flores</p>
+        <p>Utilizando la pokeapi</p>
+        <a href="https://pokeapi.co" target="_blank">pokeapi</a></footer>
     </>
   )
 }
