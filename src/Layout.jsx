@@ -67,7 +67,12 @@ const Layout = () => {
       if (!prevFavorites[pokemonId]) {
         fetchPokemonById(pokemonId).then((newFavoritePokemon) => {
           if (newFavoritePokemon) {
-            setFavoritePokemons((prevFavoritePokemons) => [...prevFavoritePokemons, newFavoritePokemon]);
+            setFavoritePokemons((prevFavoritePokemons) => {
+              if (!prevFavoritePokemons.some((pokemon) => pokemon.id === newFavoritePokemon.id)) {
+                return [...prevFavoritePokemons, newFavoritePokemon];
+              }
+              return prevFavoritePokemons; // Si ya está, no lo agrega
+            });
           }
         });
       } else {

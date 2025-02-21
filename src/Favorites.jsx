@@ -2,7 +2,7 @@ import PokemonCard from "./components/PokemonCard";
 import { useOutletContext } from "react-router-dom";
 
 const Favorites = () => {
-  const { favoritePokemons, favorites, onToggle } = useOutletContext();
+  const { favoritePokemons, onToggle } = useOutletContext();
 
 
   return (
