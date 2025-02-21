@@ -9,19 +9,23 @@ const PokemonCard = ({ pokemon, onToggle, isFavorite }) => {
 
   return (
     <div className={pokemon ? pokemon.type + " card" : "card"}>
+      <div className='pokemon-description'>
+        <p className="pokemon-name">{pokemon ? pokemon.name : "Cargando..."}</p>
+        <p className="pokemon-type">{pokemon ? pokemon.type : "Cargando..."}</p>
+        {pokemon && <img className="pokemon-image" src={pokemon.image} alt={pokemon.name} />}
+
+      </div>
       <div>
         <button className="favorite" type="button" onClick={handleFavoriteToggle}>
           {isFavorite ? <FaHeart /> : <FaRegHeart />}
         </button>
-        {pokemon && <img className="pokemon-image" src={pokemon.image} alt={pokemon.name} />}
       </div>
-      <p className="pokemon-name">{pokemon ? pokemon.name : "Cargando..."}</p>
-      <p className="pokemon-type">{pokemon ? pokemon.type : "Cargando..."}</p>
+
       <div className="stats">
         {pokemon && (
           <>
             <div>
-              <p>Hp </p>
+              <p>HP </p>
               <p>{pokemon.stats.hp}</p>
             </div>
             <div>

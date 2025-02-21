@@ -1,144 +1,168 @@
 .card {
-  border: 1px solid white;
   position: relative;
-  border-radius: 1.5rem;
-  max-width: 15rem;
-  min-height: 20rem;
+  border-radius: 1rem;
+  width: 12.25rem;
+  min-height: 19rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items:center;
   color: black;
+  background-color: #ffbf7f;
 }
 
 .favorite {
+  display: flex; /* Habilita Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  padding: 0.3rem;
   font-size: 1.2rem;
   position: absolute;
   border: none;
-  background: none;
-  color: red;
-  top: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  color: #282828;
+  top: 1.3rem;
   right: 1rem;
   cursor: pointer;
+  width: 2rem;
 }
+
+.favorite svg {
+      width: 1em; 
+      height: 1em;
+    }
 
 .pokemon-image {
   width: 100%;
-  background: rgba( 255, 255, 255, 0.35 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 1.5px );
-  -webkit-backdrop-filter: blur( 1.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
+.pokemon-description{
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.8),rgba(255,255,255,0.1), rgba(255, 255, 255, 0));
 }
 
 .pokemon-name{
   font-size: 1.5rem;
+  line-height: 1.5rem;
   margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .pokemon-type{
+  padding-top: 0.3rem;
+  font-size: 0.8rem;
   margin:0;
 }
 
 
 .stats {
+  margin-bottom: 0.8rem;
+  width: 90%;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.25rem;
   font-size: 0.75rem;
   text-align: center;
-  align-self: stretch;
-  align-items: center;
-  background: rgba( 255, 255, 255, 0.35 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 1.5px );
--webkit-backdrop-filter: blur( 1.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  justify-content: space-between;
 }
 
-.stats div{
-  flex: 1;
+.stats div {
+  flex:1;
 }
+.stats div p:nth-child(2) {
+  border-radius: 50%;
+  background-color:rgba( 255, 255, 255, 0.35 );
+  padding: 0.5rem;
+  
+  font-weight: bold;
+}
+
+.stats div p:first-child {
+  font-size: 0.5rem;
+}
+
+
 
 // colores que añadire por naturaleza
 
 .fighting {
-    background: linear-gradient(to bottom right, #C22E28, #FF6F61);
+  color: white;
 }
 
 .flying {
-    background: linear-gradient(to bottom right, #A98FF3, #C3B1E1);
+    background: #BAAAFF;
 }
 
 .poison {
-    background: linear-gradient(to bottom right, #A33EA1, #D1A3D4);
+    background: #c8a0e5;
 }
 
 .ground {
-    background: linear-gradient(to bottom right, #E2BF65, #F5D9A5);
+    background: #915121;
 }
 
 .rock {
-    background: linear-gradient(to bottom right, #B6A136, #DCC48E);
+    background: #afa981;
 }
 
 .bug {
-    background: linear-gradient(to bottom right, #A6B91A, #C6D16B);
+    background: #99CC33;
 }
 
-/* Ghost */
 .ghost {
-    background: linear-gradient(to bottom right, #735797, #A786C2);
+    background: #b7a0b7;
 }
 
 .steel {
-    background: linear-gradient(to bottom right, #B7B7CE, #D1D1E0);
+    background: #30505c;
 }
 
-/* Fire */
 .fire {
-    background: linear-gradient(to bottom right, #EE8130, #FFA756);
+    background: #FF7F00;
 }
 
 .water {
-    background: linear-gradient(to bottom right, #6390F0, #8FC0FF);
+    background: #2980ef;
 }
 
 .grass {
-    background: linear-gradient(to bottom right, #7AC74C, #A6E3A1);
+    background: #9fd094;
 }
 
 .electric {
-    background: linear-gradient(to bottom right, #F7D02C, #FFE16B);
+    background: #fac000;
 }
 
 .psychic {
-    background: linear-gradient(to bottom right, #F95587, #FFA3B1);
+    background: #77203c;
 }
 
 .ice {
-    background: linear-gradient(to bottom right, #96D9D6, #BFFCC6);
+    background: #ADD8E6;
 }
 
 .dragon {
-    background: linear-gradient(to bottom right, #6F35FC, #9A7ED9);
+    background: #a7aff0;
 }
 
 .dark {
-    background: linear-gradient(to bottom right, #705746, #A88A7F);
+    background: #282828;
 }
 
 .fairy {
-    background: linear-gradient(to bottom right, #D685AD, #FFB6D9);
+    background: #FFCCFF;
 }
 
 .stellar {
-    background: linear-gradient(to bottom right, #FFFFFF, #E0E0E0);
+    background: #FFFFFF;
 }
 
 .normal {
-    background: linear-gradient(to bottom right, #68A090, #A3C4BC);
+    background: #9fa19f;
 }
