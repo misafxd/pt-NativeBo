@@ -7,7 +7,7 @@ const Favorites = () => {
 
   return (
     <>
-      <h1>Favorites</h1>
+      <h1>Favoritos</h1>
       <section className="pokemon-page">
         {favoritePokemons.length > 0 ? (
           favoritePokemons.map((pokemon) => (

@@ -1,11 +1,17 @@
 .nav {
-  margin-top: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-inline: 1rem;
+  padding-inline: 17rem;
+  padding-block: 1rem;
   gap: 2rem;
   min-width: 70%;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background:  rgba( 22, 21, 21, 0.7 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 100%;
 }
 
 .nav a{

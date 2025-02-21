@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>Pokemons</h1>
+      <h1>Pokémon</h1>
       <section className='pokemon-page'>
         {pokemons.map((pokemon) => (
           <PokemonCard
@@ -19,13 +19,13 @@ function App() {
         ))}
       </section>
       <div className='pages'>
-        <button onClick={() => onPageChange(currentPage - 1)} >
+        <button className='button' onClick={() => onPageChange(currentPage - 1)} >
           Previous
         </button>
         <span>
           Page {currentPage} of {totalPages}
         </span>
-        <button onClick={() => onPageChange(currentPage + 1)} >
+        <button className='button' onClick={() => onPageChange(currentPage + 1)} >
           Next
         </button>
       </div >

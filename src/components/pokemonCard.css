@@ -13,8 +13,8 @@
 }
 
 .favorite {
-  display: flex; /* Habilita Flexbox */
-  justify-content: center; /* Centra horizontalmente */
+  display: flex; 
+  justify-content: center; 
   align-items: center;
   padding: 0.3rem;
   font-size: 1.2rem;

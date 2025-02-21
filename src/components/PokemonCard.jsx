@@ -16,7 +16,7 @@ const PokemonCard = ({ pokemon, onToggle, isFavorite }) => {
 
       </div>
       <div>
-        <button className="favorite" type="button" onClick={handleFavoriteToggle}>
+        <button aria-label='add favorite' className="favorite" type="button" onClick={handleFavoriteToggle}>
           {isFavorite ? <FaHeart /> : <FaRegHeart />}
         </button>
       </div>
